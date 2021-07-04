@@ -1,0 +1,147 @@
+svg{
+  /* margin-top: 15px; */
+  /* margin-left: 25px; */
+  color: rgb(88, 31, 102);
+  cursor: pointer; 
+}
+
+.cat-icon{
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+#category-btn{
+  text-decoration: none;
+  color: rgb(43, 20, 85);
+  margin-left: 8px;
+  margin-right: 3em;
+  margin-top: 20px;
+}
+
+.cat-btn{
+  border: 2px solid rgb(43, 20, 85);
+  border-radius: 50%;
+  background-color:  rgb(250, 244, 252);
+  padding-top: 5px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-right: 25px;
+  margin-top: 15px;
+}
+
+.cat-btn:hover{
+  background-color: rgb(43, 20, 85);
+}
+
+.cat-btn:hover svg{
+  color: white;
+}
+
+#line2{
+  border-top: 1px solid rgb(82, 81, 81);
+  width: 95%;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+#sec-title{
+  margin-top: 1em;
+  margin-left: 2em;
+  color: rgb(57, 31, 90);
+  font-weight: bold;
+  font-size: large;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  /* padding: 0; */
+}
+
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 20%;
+  /* padding: 0; */
+  margin-left: 36px;
+}
+
+.card{
+  height: 18em;
+  width: 14em;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  /* margin-left: 34px; */
+}
+
+.card-header{
+  padding: 0;
+  height: 53%;
+}
+
+.card-body{
+  padding: 10px;
+}
+
+#videos-title{
+  margin-top: 0;
+  margin-left: 2em;
+  color: rgb(57, 31, 90);
+  font-weight: bold;
+  font-size: large;
+}
+
+.card-title{
+  color:  rgb(28, 6, 41);
+}
+
+#video-likes{
+  color: rgb(28, 6, 41);
+  margin-right: 50px;
+}
+
+svg{
+  color:  rgb(28, 6, 41);
+}
+
+.rate-icon{
+  margin-right: 3px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.trend-decor{
+  display: none;
+}
+
+#loadmore-btn:hover {
+  color: rgb(41, 15, 63);
+  background-color: rgb(237, 197, 255);
+  border: 1px solid rgb(76, 19, 94);
+  text-decoration: none;
+}
+
+.noContent{
+  color: rgb(41, 15, 63) !important;
+  background: transparent !important;
+  pointer-events: none;
+}
+
+#loadmore-btn{
+  width: 200px;
+  color: white;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  /* background-color: rgb(101, 54, 133); */
+  background: linear-gradient(to top, #d785f3 0%, #9b5ac7 100%);
+  transition: .3s;
+}
