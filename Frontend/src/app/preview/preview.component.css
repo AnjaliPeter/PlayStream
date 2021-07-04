@@ -1,0 +1,219 @@
+#cover{
+    width: 100%;
+    height: 12em;
+    background-color: rgb(222, 176, 248);
+}
+
+.channel{
+    width: 12em;
+    height: 31em;
+    /* background-color: violet; */
+}
+
+#channel-pic{
+    width: 7em;
+    height: 10em;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#channel-pic2{
+    width: 7em;
+    height: 10em;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.preview{
+    width: 76%;
+    height: 28em;
+    background-color: rgb(242, 224, 250);
+    /* margin-left: 25px; */
+    margin-top: 3em;
+}
+
+.preview video{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.buttons{
+    width: 3em;
+    height: 28em;
+    /* background-color: rgb(241, 219, 250); */
+    margin-top: 12em;
+    margin-left: 4px;
+}
+
+.buttons svg{
+    color: rgb(140, 68, 158);
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.buttons svg:hover{
+    fill: rgb(77, 19, 92);
+}
+
+.card-body{
+    padding: 17px;
+}
+
+.card-title{
+    color:  rgb(28, 6, 41);
+    text-align: justify;
+    font-size: large;
+    margin-left: 5px;
+    width: 98%;
+}
+
+.video-desc{
+    color:  rgb(120, 91, 138);
+    text-align: justify;
+    width: 98%;
+    margin-left: 5px;
+}
+
+.video-views{
+    margin-left: 5px;
+    text-decoration: none;
+    margin-right: 25px;
+    color: rgb(77, 75, 75);
+}
+
+.channel-title{
+    color:  rgb(28, 6, 41);
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.cat-icon{
+    color: rgb(77, 19, 92);
+    margin-right: 3px;
+    margin-left: 5px;
+}
+
+.rate-icon{
+    color: rgb(101, 54, 112);
+    margin-right: 3px;
+    margin-left: 5px;
+}
+
+.channel-desc{
+    color: rgb(88, 55, 107);
+    margin-left: 5px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    /* padding: 0; */
+}
+
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 20%;
+    /* padding: 0; */
+    margin-left: 36px;
+}
+
+.card{
+    height: 18em;
+    width: 14em;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    /* margin-left: 34px; */
+}
+
+.card-header{
+    padding: 0;
+    height: 53%;
+}
+
+.related .card-body{
+    padding: 10px;
+}
+
+label{
+    margin-top: 0;
+    margin-left: 2em;
+    color: rgb(57, 31, 90);
+    font-weight: bold;
+    font-size: large;
+}
+
+.related-title{
+    color:  rgb(28, 6, 41);
+    text-align: justify;
+}
+
+.related #video-likes{
+    color: rgb(28, 6, 41);
+    margin-right: 50px;
+}
+
+svg{
+    color: rgb(97, 57, 124);
+}
+
+.rate-icon{
+    margin-right: 1px;
+    color: rgb(97, 57, 124);
+}
+
+.rate-icon2{
+    margin-right: 6px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#nomore{
+    color: rgb(41, 15, 63);
+    background: transparent;
+    pointer-events: none;
+    margin-left: 41%;
+}
+
+.related-sec{
+    margin-top: 30em;
+}
+
+.btn{
+    background: none;
+    border: 1px solid rgb(75, 36, 97);
+    color: rgb(75, 36, 97);
+}
+
+#remove-btn{
+    margin-right: 9px;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn:hover{
+    background-color: rgb(75, 36, 97);
+    color: white;
+}
+
+.desc{
+    width: 17em;
+    background-color: rgb(246, 237, 252);
+}
+
+td{
+    width: 15em;
+}
+
+.offcanvas-title{
+    color:  rgb(82, 41, 105);
+}
