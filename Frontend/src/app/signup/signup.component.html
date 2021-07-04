@@ -1,0 +1,102 @@
+<div class="signup-page">
+    <table width="100%" class="wallpaper">
+        <tr>
+            <td class="form" width="55%">
+                <div class="form-decor">
+
+                    <!-- Signup form -->
+                    <form method="POST" (ngSubmit)="addChannel()">
+                        <table class="form-table">
+                            <tr>
+                                <td class="form-sec" width="63%">
+                                    <p class="h4 mb-4 title">Sign Up</p>
+                                    <div class="row">
+                                        <div class="mb-3 col">
+                                            <label for="exampleInputEmail1" class="form-label">First name</label>
+                                            <input type="text" class="form-control" name="firstname" [(ngModel)]="channelItem.firstname" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3 col">
+                                            <label for="exampleInputEmail1" class="form-label">Last name</label>
+                                            <input type="text" class="form-control" name="lastname" [(ngModel)]="channelItem.lastname" id="exampleInputEmail2" aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-3 col">
+                                            <label for="exampleInputEmail1" class="form-label">Channel name</label>
+                                            <input type="text" class="form-control" name="channel" [(ngModel)]="channelItem.channel" id="exampleInputEmail3" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3 col">
+                                            <label for="exampleInputEmail1" class="form-label">Channel category</label>
+                                            <select class="form-select" name="category" [(ngModel)]="channelItem.category" aria-label="Default select example">
+                                                <option selected value="Education">Education</option>
+                                                <option value="Music">Music</option>
+                                                <option value="Film">Film</option>
+                                                <option value="Games">Games</option>
+                                                <option value="Comedy">Comedy</option>
+                                                <option value="Banking">Banking</option>
+                                                <option value="Shopping">Shopping</option>
+                                                <option value="News">News</option>
+                                                <option value="Cooking">Cooking</option>
+                                                <option value="Hobbies">Hobbies</option>
+                                                <option value="Economy">Economy</option>
+                                                <option value="Weather">Weather</option>
+                                                <option value="Architecture">Architecture</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <label for="exampleInputEmail1" class="form-label">Image</label><br>
+                                    <div class="input-group mb-3">
+                                        <input type="file" class="form-control" (change)="selected($event)" name="image" [(ngModel)]="channelItem.image" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Channel description</label>
+                                        <textarea type="textarea" class="form-control" name="description" minlength="120" maxlength="125" [(ngModel)]="channelItem.description" id="exampleInputEmail4" aria-describedby="emailHelp"></textarea>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-3 col">
+                                            <label for="exampleInputEmail1" class="form-label">Country</label>
+                                            <input type="text" class="form-control" name="country" [(ngModel)]="channelItem.country" id="exampleInputEmail5" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3 col">
+                                            <label for="exampleInputEmail1" class="form-label">Phone no.</label>
+                                            <input type="text" class="form-control" name="phoneno" minlength="10" maxlength="10" [(ngModel)]="channelItem.phoneno" id="exampleInputEmail6" aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control"  name="email" [(ngModel)]="channelItem.email" id="exampleInputEmail7" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" name="password" [(ngModel)]="channelItem.password" id="exampleInputPassword1">
+                                        <div id="passhelp" class="form-text">
+                                            Must be 6-8 characters long , contain letters and numbers
+                                        </div>
+                                    </div>
+                                    <button id="signup-btn" type="submit">Sign Up</button>
+                                    <p id="signup1">Already have an account?
+                                    <a routerLink="/" id="signup2" data-toggle="modal" data-target="#exampleModal">SignIn</a>
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="desc">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-person-fill account-icon" viewBox="0 0 16 16">
+                                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                        <span class="navbar-brand mb-0" id="brand-btn">PlayStream</span><br>
+                                        <span id="tagline">Ready to Shoot Life !</span>
+                                        <div id="create" class="form-text">
+                                            Creating a PlayStream account means you're streaming your own PlayStream channel ,
+                                            All The Best !
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
