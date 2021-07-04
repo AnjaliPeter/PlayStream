@@ -1,0 +1,74 @@
+<div class="upload-page">
+    <div class="cover">
+        <label for="videos" id="title">Upload Your Video Here . . .</label><br>
+
+        <!-- upload form -->
+        <div class="upload-form">
+            <form method="POST" (ngSubmit)="addVideo()">
+                <video src="{{url}}" controls autoplay loop></video>
+                <br><br><br>
+                <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label">Title</label><br>
+                    <input type="text" class="field" name="title" minlength="65" maxlength="70" [(ngModel)]="videoItem.title" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="row">
+                    <div class="mb-4 col">
+                        <label for="exampleInputEmail2" class="form-label">Channel</label><br>
+                        <input type="text" class="field" name="channel" [(ngModel)]="videoItem.channel" disabled id="exampleInputEmail2" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-4 col">
+                        <label for="exampleInputEmail3" class="form-label">Author</label><br>
+                        <input type="text" class="field" name="author" [(ngModel)]="videoItem.author" disabled id="exampleInputEmail3" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail4" class="form-label">Description</label>
+                    <textarea type="textarea" class="field" name="description" minlength="120" maxlength="140" [(ngModel)]="videoItem.description" id="exampleInputEmail4" aria-describedby="emailHelp"></textarea>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col">
+                        <label for="exampleInputEmail5" class="form-label mb-1">Category</label>
+                        <select class="field mb-2" name="category" [(ngModel)]="videoItem.category" disabled aria-label="Default select example">
+                            <option selected value="Education">Education</option>
+                            <option value="Music">Music</option>
+                            <option value="Film">Film</option>
+                            <option value="Games">Games</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Banking">Banking</option>
+                            <option value="Shopping">Shopping</option>
+                            <option value="News">News</option>
+                            <option value="Cooking">Cooking</option>
+                            <option value="Hobbies">Hobbies</option>
+                            <option value="Economy">Economy</option>
+                            <option value="Weather">Weather</option>
+                            <option value="Architecture">Architecture</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="exampleInputEmail6" class="form-label">Date</label>
+                        <input type="text" class="field" name="date" [(ngModel)]="videoItem.date" placeholder="eg: 12 Jun 2012" id="exampleInputEmail6" aria-describedby="emailHelp">
+                    </div>
+                    <label for="exampleInputEmail7" class="form-label mb-2">Thumbnail</label><br>
+                    <div class="input-group mb-4">
+                        <input type="file" class="field" name="image" (change)="imageselected($event)" [(ngModel)]="videoItem.image" accept="image/*" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                    </div>
+                    <label for="exampleInputEmail8" class="form-label mb-2">Video</label><br>
+                    <div class="input-group mb-5">
+                        <input type="file" (change)="videoselected($event)"  class="field video-input" accept="video/*" name="video" [(ngModel)]="videoItem.video" id="inputGroupFile04" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                    </div>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="agreed" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      I agree to the<a id="terms"> Terms & Conditions </a>of PlayStream
+                    </label>
+                </div>
+                <div class="d-flex">
+                    <button id="cancel-btn" routerLink="/home">Cancel</button>
+                    <button id="upload-btn" type="submit">Upload</button>
+                </div>
+            </form>
+            <br><br><br>
+        </div>
+    </div>
+</div>
