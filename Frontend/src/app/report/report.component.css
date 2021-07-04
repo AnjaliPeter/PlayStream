@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Aref Ruqaa");
+
+
+.cover{
+    width: 100%;
+    height: 12em;
+    background-color: rgb(222, 176, 248);
+    padding-top: 15px;
+}
+
+#head{
+    color: rgb(56, 28, 82);
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+span{
+    margin-left: 20px;
+    font-family: "Aref Ruqaa";
+    font-size: large;
+}
+
+.description{
+    border-radius: 5px;
+    height: 46em;
+    border: 1px solid #cccccc;
+    background-color: rgb(249, 243, 252);
+    width: 89%;
+    margin-top: 15px;
+    margin-left: 6em;
+    padding-top: 1em;
+    padding-left: 12px;
+}
+
+form{
+    margin-bottom: 5em;
+}
+
+.upload-form{
+    margin-left: 30px;
+    margin-top: 1em;
+    width: 94%;
+    height: 35em;
+    /* background-color: rgb(242, 224, 250); */
+    margin-bottom: 15em;
+}
+
+label{
+    color: rgb(44, 9, 65);
+    margin: 0;
+}
+
+.field{
+    background: none;
+    border-bottom: 1px solid #cccccc;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    box-shadow: none;
+    width: 98%;
+}
+
+#upload-btn{
+    width: 6em;
+    height: 35px;
+    color: rgb(93, 50, 109);
+    border-radius: 5px;
+    border: 1px solid rgb(102, 32, 129);
+    margin-left: 5%;
+    margin-top: 4em;
+    background: none;
+}
+
+#upload-btn:hover{
+    background-color: rgb(102, 32, 129);
+    color: white;
+    border: 1px solid rgb(102, 32, 129);
+}
+
+#cancel-btn{
+    width: 6em;
+    height: 35px;
+    color: rgb(93, 50, 109);
+    border-radius: 5px;
+    border: 1px solid rgb(102, 32, 129);
+    margin-left: 35%;
+    margin-top: 4em;
+    background: none;
+}
+
+#cancel-btn:hover{
+    background-color: rgb(102, 32, 129);
+    color: white;
+    border: 1px solid rgb(102, 32, 129);
+}

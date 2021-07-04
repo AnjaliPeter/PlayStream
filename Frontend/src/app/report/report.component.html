@@ -1,0 +1,70 @@
+<div class="cover">
+    <p id="head">Report a Bug</p>
+
+    <!-- report form -->
+    <div class="description">
+        <span class="mb-6">If you could find any technical error or improper functioning on PlayStream, please inform us here . . .</span><br>
+        <span>You can report any error or defect that would affect PlayStream's performance or user experience</span>
+        <div class="upload-form">
+            <form  method="POST" (ngSubmit)="report()">
+                <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label">Title</label><br>
+                    <input type="text" class="field" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="row">
+                    <div class="mb-4 col">
+                        <label for="exampleInputEmail1" class="form-label">Channel</label><br>
+                        <input type="text" class="field channel" disabled id="exampleInputEmail2" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-4 col">
+                        <label for="exampleInputEmail1" class="form-label">Author</label><br>
+                        <input type="text" class="field author" disabled id="exampleInputEmail3" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Detailed Description of Bug</label>
+                    <textarea type="textarea" class="field" id="exampleInputEmail4" aria-describedby="emailHelp"></textarea>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col">
+                        <label for="exampleInputEmail5" class="form-label mb-1">Category</label>
+                        <select class="field mb-2" id="category" aria-label="Default select example">
+                            <option selected value="Functional">Functional errors</option>
+                            <option value="Error">Error handling errors</option>
+                            <option value="Communication">Communication errors</option>
+                            <option value="Syntactic">Syntactic errors</option>
+                            <option value="Performance">Performance defects</option>
+                            <option value="Usability">Usability defects</option>
+                            <option value="Compatibility">Compatibility defects</option>
+                            <option value="Security">Security defects</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                        <input type="email" class="field" id="exampleInputEmail6" aria-describedby="emailHelp">
+                    </div>
+                    <label for="exampleInputEmail1" class="form-label">Suggestions if any</label><br>
+                    <div class="input-group mb-4">
+                        <input type="text" class="field" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                    </div>
+                    <label for="exampleInputEmail1" class="form-label">Others</label><br>
+                    <div class="input-group mb-5">
+                        <input type="text" class="field" id="inputGroupFile07" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                    </div>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input check" type="checkbox" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      I hereby declare that the information given here is valid in my own experience
+                    </label>
+                </div>
+                <div class="d-flex">
+                    <button id="cancel-btn" routerLink="/home">Cancel</button>
+                    <button id="upload-btn" type="submit" >Submit</button>
+                </div>
+            </form>
+            <br><br><br>
+        </div>
+    </div>
+    <br><br><br><br>
+</div>
