@@ -1,0 +1,69 @@
+<div class="welcome">
+    <table width="100%">
+        <tr>
+            <td class="form" width="45%">
+                <div class="form-decor">
+
+                    <!-- Login form -->
+                    <form  (ngSubmit)="login()">
+                        <p class="h4 mb-4 title">Sign In</p>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control emailInput" name="email" [(ngModel)]="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control passwordInput" name="password" [(ngModel)]="password" id="exampleInputPassword1">
+                            </div>
+                            <a id="pass" (click)="forgotpassword()">Forgot password?</a>
+                            <button id="signup-btn" type="submit">Sign In</button>
+                            <p id="signup1">Don't have an account?
+                            <a routerLink="signup" id="signup2" data-toggle="modal" data-target="#exampleModal">SignUp</a>
+                            </p>
+                    </form>
+                </div>
+            </td>
+            <td>
+                <p id="tagline">Ready to Shoot Life !</p>
+                <p id="desc">Unlimited movies, TV shows & more<br>
+                Watch & Upload your favorites <br>
+                Anywhere...  Everywhere...</p>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <div>
+    <!-- movies -->
+    <div>
+        <label for="movies" id="sec-title">Movies on Reel</label>
+        <hr id="line">
+    </div>
+    <div style="width: 95%; height: 260px; text-align:center;margin-left:2em; padding:0;">
+        <ng-image-slider class="carousel" [images]="imageMovies" [infinite]="true" [autoSlide]="1"
+            [imageSize]="{width: '13%', height: 225}" slideImage="1"></ng-image-slider>
+    </div>
+
+    <!-- trending -->
+    <div>
+        <label for="movies" id="sec-title">Trending Now</label>
+        <hr id="line">
+    </div>
+    <div style="width: 95%; height: 260px; text-align:center;margin-left:2em; padding:0;">
+        <ng-image-slider class="carousel" #nav [images]="imageTrends" [infinite]="true" [autoSlide]="1"
+            [imageSize]="{width: '13%', height: 225}" slideImage="1"></ng-image-slider>
+    </div>
+
+    <!-- news -->
+    <!-- <div>
+        <label for="movies" id="sec-title">Breaking News</label>
+        <hr id="line">
+    </div>
+    <div style="width: 95%; height: 260px; text-align:center;margin-left:2em; padding:0;">
+        <ng-image-slider class="carousel" #nav [images]="imageNews" [infinite]="true" [autoSlide]="1"
+            [imageSize]="{width: '13%', height: 225}" slideImage="1"></ng-image-slider>
+    </div> -->
+    </div>
+    <br><br><br>
+    <app-footer></app-footer>
+</div>

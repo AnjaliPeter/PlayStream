@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Cherry Cream Soda");
+
+
+.welcome{
+    background-color: rgb(250, 244, 252);
+    height: 582px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.carousel{
+    /* margin-left: 50%; */
+    margin-top: 2em;
+}
+
+form{
+    border: 2px solid rgb(238, 209, 247);
+    width: 50%;
+    margin: 5em;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: rgba(250, 231, 250,0.3);
+}
+
+.title{
+    padding: 5px;
+    padding-left: 32%;
+    background-color: rgb(246, 165, 253);
+    color: rgb(73, 19, 73);
+    border-radius: 3px;
+}
+
+label{
+    color: rgb(44, 9, 65);
+}
+
+#pass{
+    margin-left: 4em;
+    text-decoration: none;
+    color: rgb(44, 9, 65);
+}
+
+table{
+    height: 100%;
+    background-image: url("../../assets/images/logos/wallpaper.jpg");
+    background-size: cover;
+}
+
+.form-decor{
+    width: 100%;
+    color: rgb(196, 123, 196);
+}
+
+#signup-btn{
+    width: 6em;
+    height: 35px;
+    color: rgb(102, 32, 129);
+    border-radius: 5em;
+    border: 2px solid rgb(102, 32, 129);
+    margin-left: 5em;
+    margin-top: 1em;
+}
+
+#signup-btn:hover{
+    background-color: rgb(102, 32, 129);
+    color: white;
+    border: 1px solid rgb(102, 32, 129);
+}
+
+#signup1{
+    margin-left: 1em;
+    margin-top: 10px;
+    color: rgb(44, 9, 65);
+}
+
+#signup2{
+    text-decoration: none;
+    color: rgb(44, 9, 65);
+}
+
+#desc{
+    color: rgb(250, 240, 255);
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: 'Cherry Cream Soda';
+    text-shadow: -2px 2px 0 rgb(173, 119, 209),
+                1px 1px 0 rgb(123, 77, 160),
+                1px -1px 0 rgb(105, 63, 161),
+                -1px -1px 0 rgb(92, 59, 146);
+}
+
+#tagline{
+    color: rgb(245, 226, 255);
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: 'Cherry Cream Soda';
+    text-shadow: -3px 3px 0 rgb(173, 119, 209),
+                1px 1px 0 rgb(123, 77, 160),
+                1px -1px 0 rgb(105, 63, 161),
+                -1px -1px 0 rgb(92, 59, 146);
+}
+
+#line{
+    border-top: 1px solid rgb(82, 81, 81);
+    width: 95%;
+    margin-left: 2em;
+    margin-top: 0%;
+}
+
+#sec-title{
+    margin-left: 2em;
+    color: rgb(57, 31, 90);
+    font-weight: bold;
+    font-size: large;
+}
