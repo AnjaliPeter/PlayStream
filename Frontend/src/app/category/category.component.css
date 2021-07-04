@@ -1,0 +1,88 @@
+#line2{
+    border-top: 1px solid rgb(82, 81, 81);
+    width: 95%;
+    margin-left: 2em;
+    margin-top: 4%;
+}
+
+#sec-title{
+    margin-top: 1em;
+    margin-left: 2em;
+    color: rgb(57, 31, 90);
+    font-weight: bold;
+    font-size: large;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    /* padding: 0; */
+}
+
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 20%;
+    /* padding: 0; */
+    margin-left: 36px;
+}
+
+.card{
+    height: 18em;
+    width: 14em;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    /* margin-left: 34px; */
+}
+
+.card-header{
+    padding: 0;
+    height: 53%;
+}
+
+.card-body{
+    padding: 10px;
+}
+
+#videos-title{
+    margin-top: 0;
+    margin-left: 2em;
+    color: rgb(57, 31, 90);
+    font-weight: bold;
+    font-size: large;
+}
+
+.card-title{
+    color:  rgb(28, 6, 41);
+    text-align: justify;
+}
+
+#video-likes{
+    color: rgb(28, 6, 41);
+    margin-right: 50px;
+}
+
+svg{
+    color: rgb(97, 57, 124);
+}
+
+.rate-icon{
+    margin-right: 6px;
+}
+
+.rate-icon2{
+    margin-right: 6px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#nomore{
+    color: rgb(41, 15, 63);
+    background: transparent;
+    pointer-events: none;
+    margin-left: 41%;
+}
