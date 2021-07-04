@@ -24,15 +24,15 @@ localhost:4200
 
 # How to register a PlayStream account or channel ?
 
-Step 1: Click " Signup " in the Login/Welcome page to get a SignUp form.
-Step 2: Enter your name , country , channel name , category , description , etc.
-Step 3: Upload a channel image which would be displayed as your profile picture
-Step 4: Provide a valid E-mail address which would later serve as your unique username
-Step 5: Set a strong password for your PlayStream account
-Step 6: Provide a phone number for recovery purposes of your account
-Step 7: By clicking SignUp button, your details will be validated by PlayStream
-Step 8: You will be directed to the LogIn/Welcome page once your account is validated
-Step 9: You can now login with your E-mail address and password
+Step 1: Click " Signup " in the Login/Welcome page to get a SignUp form.                                                 
+Step 2: Enter your name , country , channel name , category , description , etc.                                   
+Step 3: Upload a channel image which would be displayed as your profile picture                  
+Step 4: Provide a valid E-mail address which would later serve as your unique username                       
+Step 5: Set a strong password for your PlayStream account                                            
+Step 6: Provide a phone number for recovery purposes of your account                                               
+Step 7: By clicking SignUp button, your details will be validated by PlayStream                                                 
+Step 8: You will be directed to the LogIn/Welcome page once your account is validated                                                         
+Step 9: You can now login with your E-mail address and password                                                  
 
 
 # User Guide
