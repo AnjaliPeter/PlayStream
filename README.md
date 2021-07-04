@@ -19,7 +19,7 @@ localhost:4200
 
 # Signup / Signin
 
-*** Account registration is mandatory for new users to access the exclusive features such as select watch, upload, rate, comment, etc.           
+*** Account/channel registration is mandatory for new users to access the exclusive features such as select watch, upload, rate, comment, etc.           
 
 
 # How to register a PlayStream account or channel ?
