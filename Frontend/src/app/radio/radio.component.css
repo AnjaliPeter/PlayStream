@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Aref Ruqaa");
+
+
+#cover{
+    width: 100%;
+    height: 12em;
+    background-color: rgb(222, 176, 248);
+    padding-top: 15px;
+}
+
+#head{
+    color: rgb(56, 28, 82);
+    font-weight: bold;
+    /* font-size: large; */
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#para{
+    margin-left: 3em;
+    font-family: "Aref Ruqaa";
+    font-size: large;
+}
+
+.plan-card{
+    background-color: rgb(250, 241, 255);
+    width: 17em;
+    margin-top: 70px;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 4em;
+    height: 28em;
+    border: 1px solid #b9b8b8;
+    box-shadow: 3px 5px 3px #d4d3d3;
+}
+
+.card{
+    border-radius: 8px;
+}
+
+.plans{
+   padding-left: 72px;
+}
+
+.card-head{
+    background-color: rgb(138, 81, 172);
+    height: 155px;
+    text-align: center;
+}
+
+.card-header{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#price{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.rate-icon{
+    color: #e2ad3a;
+    margin-right: 6px;
+}
+
+#plan-item{
+    color: white;
+}
+
+#basic{
+    color: rgb(121, 86, 155);
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: large;
+}
+
+#features{
+    color: rgb(26, 25, 25);
+    font-size: 17px;
+    font-family: "Aref Ruqaa";
+}
+
+button{
+    background: none;
+    border: 1px solid rgb(109, 58, 136);
+    color: rgb(104, 50, 133);
+}
+
+button:hover{
+    background-color: rgb(109, 58, 136);
+    color: white;
+    border: 1px solid rgb(109, 58, 136);
+}
+
+#sub-btn1{
+    outline: none;
+    box-shadow: none;
+}
+
+#sub-btn2{
+    outline: none;
+    box-shadow: none;
+}
+
+#sub-btn3{
+    outline: none;
+    box-shadow: none;
+}
+
+#lastline{
+    color: rgb(133, 82, 160);
+    padding-bottom: 5em;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    margin-left: 10em;
+}
