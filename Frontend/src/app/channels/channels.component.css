@@ -1,0 +1,41 @@
+#title{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: rgb(57, 31, 90);
+    font-weight: bold;
+    font-size: large;
+}
+
+.btns{
+    background: none;
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+}
+
+.btn{
+    background: none;
+    border: 1px solid rgb(75, 36, 97);
+    color: rgb(75, 36, 97);
+}
+
+#category-btn{
+    outline: none;
+    box-shadow: none;
+}
+
+#channel-btn{
+    outline: none;
+    box-shadow: none;
+}
+
+#sort{
+    margin-left: 35em;
+    color: rgb(75, 36, 97);
+    margin-top: 10px;
+}
+
+.btn:hover{
+    background-color: rgb(75, 36, 97);
+    color: white;
+}

@@ -1,1 +1,13 @@
-
+<div>
+    <!-- channels -->
+    <div class="d-flex">
+        <label for="channels" id="title">PlayStream Channels</label>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end btns">
+            <label id="sort" for="sortby">Sort By</label>
+            <button class="btn btn-primary btns" routerLink="sort/category" id="category-btn" type="button">Category</button>
+            <button class="btn btn-primary btns" routerLink="sort/channel" id="channel-btn" type="button">Channel</button>
+        </div>
+    </div>
+    
+    <router-outlet></router-outlet>
+</div>
