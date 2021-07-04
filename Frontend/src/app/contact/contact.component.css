@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Amarante");
+@import url("https://fonts.googleapis.com/css?family=Aref Ruqaa");
+@import url("https://fonts.googleapis.com/css?family=Belgrano");
+@import url("https://fonts.googleapis.com/css?family=BioRhyme");
+
+
+#cover{
+    width: 100%;
+    height: 12em;
+    background-color: rgb(222, 176, 248);
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.description{
+    padding: 2em;
+    margin-left: 2em;
+    border: 1px solid #cccccc;
+    background-color: rgb(249, 243, 252);
+    width: 89%;
+    height: 55em;
+    margin-left: 6em;
+    border-radius: 5px;
+}
+
+.para{
+    text-align: justify;
+    font-family: "Aref Ruqaa";
+}
+
+#title{
+    font-family: "Amarante";
+    color: rgb(56, 28, 82);
+}
+
+#tagline{
+    font-family: "Belgrano";
+    color: rgb(81, 52, 109);
+}
+
+#query-head{
+    font-family: "BioRhyme";
+    color: rgb(56, 28, 82);
+}
+
+#query-para{
+    font-family: "Aref Ruqaa";
+}
+
+.column-right1{
+    margin-left: 46%;
+}
+
+.column-right2{
+    margin-left: 32%;
+}
+
+.column-left{
+    margin-left: 2%;
+}
+
+#head{
+    color: rgb(56, 28, 82);
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
