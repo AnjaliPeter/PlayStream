@@ -1,1 +1,130 @@
-
+<div class="admin-page">
+    <div class="cover">
+        <p id="head">PlayStream Admin</p>
+        <div class="graph-sec d-flex">
+            <img src="../../assets/images/icons/progress.png" id="progress" alt="progress graph">
+            <div class="container">
+                <h6 id="graph-head">PlayStream Progress Chart</h6>
+                <img src="../../assets/images/icons/user.png" id="users" alt="user chart">
+                <div id="join">More than 80% people join <br>PlayStream every day !</div>
+                <div class="graph-scale">
+                    <div class="d-flex">
+                        <div id="square-black"></div>
+                        <div id="premium">Premium members</div>
+                    </div>
+                    <div class="d-flex">
+                        <div id="square-red"></div>
+                        <div id="standard">Standard members</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="profile card">
+                <div class="card-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle admin-icon" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                    <h4 id="admin-head">Admin</h4>
+                </div>
+                <div class="card-body">
+                    <label for="userid" id="userid">userid : admin@PlayStream</label>
+                    <div class="d-flex">
+                        <div id="followers">
+                            456K<br>Followers
+                        </div>
+                        <div id="vl"></div>
+                        <div id="channels">
+                            369K<br>Subscribers
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="d-flex">
+                    <a class="viewers-btn" routerLink="/home/channels/sort/AllChannels">
+                        <div class="cards d-flex">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-eye-fill eye-icon" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                        </div>
+                        <div id="card-vl"></div>
+                        <div id="viewers">
+                            675K<br>Viewers
+                        </div>
+                        </div>
+                    </a>
+                    <a class="viewers-btn" routerLink="/home/channels/sort/AllChannels">
+                        <div class="cards d-flex">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-fill video-icon" viewBox="0 0 16 16">
+                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>
+                            </div>
+                            <div id="card-vl"></div>
+                            <div id="viewers">
+                                436K<br>Channels
+                            </div>
+                        </div>
+                    </a>
+                    <a class="viewers-btn" routerLink="/home/videos/category/AllCategories">
+                        <div class="cards d-flex">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-camera-video-fill video-icon" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z"/>
+                                </svg>
+                            </div>
+                            <div id="card-vl"></div>
+                            <div id="videos">
+                                873K<br>Videos
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="map-sec">
+                    <img src="../../assets/images/icons/map.png" id="map" alt="map">
+                    <div id="map-head">PlayStream has around 369K subscribers all over the world !</div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="country-sec">
+                <img src="../../assets/images/icons/country.jpg" alt="country" id="country">
+                <div class="d-flex label-sec">
+                    <div id="rectangle" style="background-color: rgb(99, 173, 99);"></div>
+                    <div id="pre-member">Premium members</div>
+                    <div id="rectangle" style="background-color: rgb(89, 144, 196);"></div>
+                    <div>Standard members</div>
+                </div>
+            </div>
+            <div class="chart-sec">
+                <p id="chart-head">PlayStream users (age-wise) in 2021</p>
+                <div class="d-flex">
+                    <img src="../../assets/images/icons/age.png" alt="age chart" id="age">
+                    <div id="chart-vl"></div>
+                    <div class="chart-scale">
+                        <div class="d-flex scale">
+                            <div id="square" style="background-color: rgb(255, 100, 100);"></div><div>15 - 30</div>
+                        </div>
+                        <div class="d-flex scale">
+                            <div id="square" style="background-color: rgb(253, 191, 22);"></div><div>31 - 45</div>
+                        </div>
+                        <div class="d-flex scale">
+                            <div id="square" style="background-color: rgb(92, 92, 92);"></div><div>46 - 55</div>
+                        </div>
+                        <div class="d-flex scale">
+                            <div id="square" style="background-color: rgb(108, 138, 108);"></div><div>Over 55</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="update">Updated on 01/03/2021</div>
+            </div>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end btns">
+            <button class="btn btn-primary" id="add-btn" type="button">Add Updates</button>
+        </div>
+    </div>   
+</div>
