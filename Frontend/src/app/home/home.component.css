@@ -71,14 +71,6 @@
     margin-right: 50px;
 }
 
-svg{
-    color:  rgb(28, 6, 41);
-}
-
-.rate-icon{
-    margin-right: 3px;
-}
-
 a{
     text-decoration: none;
 }
@@ -112,4 +104,16 @@ a{
     /* background-color: rgb(101, 54, 133); */
     background: linear-gradient(to top, #d785f3 0%, #9b5ac7 100%);
     transition: .3s;
+}
+
+svg{
+    color: rgb(97, 57, 124);
+}
+
+.rate-icon{
+    margin-right: 6px;
+}
+
+.rate-icon2{
+    margin-right: 6px;
 }

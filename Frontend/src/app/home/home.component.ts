@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   constructor(private channelsService:ChannelsService,private videosService:VideosService,private activatedRoute:ActivatedRoute) { }
 
   videos:any;
+  rating:any = [0,1,2,3,4,5];
 
   ngOnInit(): void {
 
