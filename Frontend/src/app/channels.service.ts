@@ -18,15 +18,6 @@ export class ChannelsService {
     
   }
 
-  searchChannel(email:any)
-  {
-    let httpHeaders = new HttpHeaders({
-      "content-Type" : "application/json"
-    });
-    return this.http.get<any>("http://localhost:9999/channels/searchchannel/"+email,{headers:httpHeaders});
-    
-  } 
-
   getChannels()
   {
     let httpHeaders = new HttpHeaders({

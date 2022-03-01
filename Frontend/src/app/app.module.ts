@@ -4,7 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { HttpClientModule } from '@angular/common/http';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { AngularFileUploaderModule } from "angular-file-uploader";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ import { VideosService } from './videos.service';
 import { ChannelsService } from './channels.service';
 import { SortComponent } from './sort/sort.component';
 import { AdminComponent } from './admin/admin.component';
+import { AuthService } from './auth.service';
 
 
 @NgModule({
@@ -59,9 +61,11 @@ import { AdminComponent } from './admin/admin.component';
     NgImageSliderModule,
     HttpClientModule,
     InfiniteScrollModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    AngularFileUploaderModule
   ],
-  providers: [VideosService,ChannelsService],
+  providers: [VideosService,ChannelsService,AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
