@@ -5,16 +5,32 @@
                 <div class="form-decor">
 
                     <!-- Login form -->
-                    <form  (ngSubmit)="login()">
+                    <form [formGroup]="reactiveForm" (ngSubmit)="login()">
                         <p class="h4 mb-4 title">Sign In</p>
-                            <div class="mb-3">
+                            <div class="mb-1">
                               <label for="exampleInputEmail1" class="form-label">Email address</label>
-                              <input type="email" class="form-control emailInput" name="email" [(ngModel)]="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <input formControlName="email" type="email" class="form-control emailInput" name="email" [(ngModel)]="userObj.email" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
-                            <div class="mb-3">
+                            <span class="error" *ngIf="reactiveForm.get('email')?.touched && reactiveForm.get('email')?.invalid">
+                                <span *ngIf="reactiveForm.controls.email.errors?.emailValidity; else elseBlock">
+                                    *Invalid Email
+                                </span>
+                                <ng-template #elseBlock>
+                                    *Email is required
+                                </ng-template>
+                            </span><br>
+                            <div class="mb-1">
                               <label for="exampleInputPassword1" class="form-label">Password</label>
-                              <input type="password" class="form-control passwordInput" name="password" [(ngModel)]="password" id="exampleInputPassword1">
+                              <input formControlName="password" type="password" class="form-control passwordInput" name="password" [(ngModel)]="userObj.password" id="exampleInputPassword1">
                             </div>
+                            <span class="error" *ngIf="reactiveForm.get('password')?.touched && reactiveForm.get('password')?.invalid">
+                                <span *ngIf="reactiveForm.controls.password.errors?.passwordValidity; else elseBlock2">
+                                    *Invalid password
+                                </span>
+                                <ng-template #elseBlock2>
+                                    *Password is required
+                                </ng-template>
+                            </span><br>
                             <a id="pass" (click)="forgotpassword()">Forgot password?</a>
                             <button id="signup-btn" type="submit">Sign In</button>
                             <p id="signup1">Don't have an account?
@@ -27,7 +43,7 @@
                 <p id="tagline">Ready to Shoot Life !</p>
                 <p id="desc">Unlimited movies, TV shows & more<br>
                 Watch & Upload your favorites <br>
-                Anywhere...  Everywhere...</p>
+                Anywhere . . .  Everywhere . . .</p>
             </td>
         </tr>
     </table>

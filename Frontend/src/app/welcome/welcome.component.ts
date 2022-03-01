@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { Router } from '@angular/router';
 import { ChannelsService } from '../channels.service';
+import { AuthService } from '../auth.service';
 import Swal from 'sweetalert2';
+import { FormGroup, FormControl, Validators, AbstractControl } from '@angular/forms';
 
 @Component({
   selector: 'app-welcome',
@@ -11,7 +13,10 @@ import Swal from 'sweetalert2';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor(private channelsService:ChannelsService,private router:Router) { }
+  // Reactive form
+  reactiveForm:FormGroup
+
+  constructor(private channelsService:ChannelsService,private router:Router,private authService:AuthService) { }
 
   channelObj:any;
   channel:any;
@@ -19,23 +24,59 @@ export class WelcomeComponent implements OnInit {
   phone:any;
   password:any;
   newpassword:any;
+  userObj={
+    email:"",
+    password:""
+  };
 
   ngOnInit(): void {
+
+    this.reactiveForm = new FormGroup({
+      email : new FormControl(null,[Validators.required,this.emailCheck]),
+      password : new FormControl(null,[Validators.required,this.passwordCheck])
+    });
+
   }
 
+  emailCheck(control:AbstractControl){
+    if(control.value != null)
+    {
+      var regexp = new RegExp('^[a-z]+[ 0-9 , %+]+@[a-z 0-9 .-]+\.[a-z]{2,4}$');
+      if(regexp.test(control.value) !== true )
+      {
+        return{
+          emailValidity:true
+        }
+      }
+    }
+    return null;
+  }
+
+  passwordCheck(control:AbstractControl){
+    if(control.value != null)
+    {
+      var regexp = new RegExp('^[a-zA-Z0-9,@$#&*]{6,15}$');
+      if(regexp.test(control.value) !== true )
+      {
+        return{
+          passwordValidity:true
+        }
+      }
+    }
+    return null;
+  }
+  
   login(){
-    if(this.email == "admin_playstream@gmail.com" && this.password == "Admin@PlayStream257")
+    if(this.userObj.email == "admin_playstream@gmail.com" && this.userObj.password == "Admin@PlayStream257")
     {
       this.adminAlert();
     }
-    else
+    else if(this.reactiveForm.status == "VALID")
     {
-      this.channelsService.searchChannel(this.email)
+      this.authService.searchChannel(this.userObj)
       .subscribe(data => {
-      this.channelObj = data;
-      if(this.channelObj!= null)
-      {
-        if(this.channelObj.password == this.password)
+        this.channelObj = data;
+        if(this.channelObj!= null)
         {
           this.signinAlert();          
         }
@@ -43,15 +84,14 @@ export class WelcomeComponent implements OnInit {
         {
           this.userAlert();
         }
-
-      }
-      else
-      {
-        this.userAlert();
-      }
       });
+      
     }
-    
+    else
+    {
+      this.reactiveForm.get('email')?.markAsTouched();
+      this.reactiveForm.get('password')?.markAsTouched();
+    }
   }
 
   adminAlert(){
@@ -78,8 +118,8 @@ export class WelcomeComponent implements OnInit {
         //   'Your imaginary file is safe :)',
         //   'error'
         // )
-        this.email = "";
-        this.password = "";
+        this.userObj.email = "";
+        this.userObj.password = "";
       }
     });
   }
@@ -119,8 +159,8 @@ export class WelcomeComponent implements OnInit {
       } 
       else if (result.dismiss === Swal.DismissReason.cancel) {
         // cancel SignIn
-        this.email = "";
-        this.password = "";
+        this.userObj.email = "";
+        this.userObj.password = "";
       }
     });
   }
@@ -144,7 +184,7 @@ export class WelcomeComponent implements OnInit {
         if (result) {
           // find account
           this.phone = result.value;
-          this.channelsService.searchChannel(this.email)
+          this.authService.searchChannel(this.email)
           .subscribe(data => {
             this.channelObj = data;
             if(this.channelObj!= null)

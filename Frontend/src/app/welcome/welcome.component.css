@@ -35,7 +35,7 @@ label{
 }
 
 #pass{
-    margin-left: 4em;
+    margin-left: 23%;
     text-decoration: none;
     color: rgb(44, 9, 65);
 }
@@ -57,7 +57,7 @@ table{
     color: rgb(102, 32, 129);
     border-radius: 5em;
     border: 2px solid rgb(102, 32, 129);
-    margin-left: 5em;
+    margin-left: 31%;
     margin-top: 1em;
 }
 
@@ -112,4 +112,8 @@ table{
     color: rgb(57, 31, 90);
     font-weight: bold;
     font-size: large;
+}
+
+.error{
+    color: rgb(146, 28, 182);
 }
