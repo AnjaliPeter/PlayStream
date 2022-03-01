@@ -49,14 +49,15 @@ channelRouter.post("/addchannel",(req,res)=>
 });
 
 // search channel
-channelRouter.get("/searchchannel/:email",(req,res)=>{
+channelRouter.post("/searchchannel",(req,res)=>{
 
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods:GET,POST,PATCH,PUT,DELETE,OPTIONS");
 
-    const email = req.params.email;
+    // const email = req.params.email;
+    let userData = req.body;
 
-    Channeldata.findOne({email : email})
+    Channeldata.findOne({$and: [{email : userData.email}, {password : userData.password}]})
     .then(function(channel){
         res.send(channel);
         console.log(channel);
