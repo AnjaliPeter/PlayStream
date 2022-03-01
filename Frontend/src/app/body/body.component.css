@@ -1,3 +1,11 @@
+@media(max-width:961px){
+    .left{
+        width: 10%;
+        font-size: small;
+        padding-left: 3%;
+    }
+}
+
 .main{
     display: flex;
     flex-direction: row;
@@ -10,6 +18,8 @@
     /* background: linear-gradient(to left, #eecbfa 0%, #daaafa 100%); */
     width: 22%;
     height: 582px;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 .left-section1{
