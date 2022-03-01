@@ -1,3 +1,4 @@
+
 export class ChannelModel{
 
     constructor(
@@ -5,7 +6,7 @@ export class ChannelModel{
         public lastname : String,
         public channel : String,
         public category : String,
-        public image : String,
+        public image : any,
         public description : String,
         public country : String,
         public phoneno : Number,

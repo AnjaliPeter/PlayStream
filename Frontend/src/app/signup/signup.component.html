@@ -5,29 +5,41 @@
                 <div class="form-decor">
 
                     <!-- Signup form -->
-                    <form method="POST" (ngSubmit)="addChannel()">
+                    <form method="POST" [formGroup]="reactiveForm" (ngSubmit)="addChannel()">
                         <table class="form-table">
                             <tr>
                                 <td class="form-sec" width="63%">
-                                    <p class="h4 mb-4 title">Sign Up</p>
+                                    <p class="h4 mb-2 title">Sign Up</p>
                                     <div class="row">
                                         <div class="mb-3 col">
                                             <label for="exampleInputEmail1" class="form-label">First name</label>
-                                            <input type="text" class="form-control" name="firstname" [(ngModel)]="channelItem.firstname" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <span class="error" *ngIf="reactiveForm.get('firstname')?.touched && reactiveForm.get('firstname')?.invalid">
+                                                *Invalid
+                                            </span>
+                                            <input type="text" formControlName="firstname" class="form-control" name="firstname" [(ngModel)]="channelItem.firstname" id="exampleInputEmail1" aria-describedby="emailHelp">
                                             </div>
                                             <div class="mb-3 col">
                                             <label for="exampleInputEmail1" class="form-label">Last name</label>
-                                            <input type="text" class="form-control" name="lastname" [(ngModel)]="channelItem.lastname" id="exampleInputEmail2" aria-describedby="emailHelp">
+                                            <span class="error" *ngIf="reactiveForm.get('lastname')?.touched && reactiveForm.get('lastname')?.invalid">
+                                                *Invalid
+                                            </span>
+                                            <input type="text" formControlName="lastname" class="form-control" name="lastname" [(ngModel)]="channelItem.lastname" id="exampleInputEmail2" aria-describedby="emailHelp">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="mb-3 col">
                                             <label for="exampleInputEmail1" class="form-label">Channel name</label>
-                                            <input type="text" class="form-control" name="channel" [(ngModel)]="channelItem.channel" id="exampleInputEmail3" aria-describedby="emailHelp">
+                                            <span class="error" *ngIf="reactiveForm.get('channel')?.touched && reactiveForm.get('channel')?.invalid">
+                                                *Invalid
+                                            </span>
+                                            <input type="text" formControlName="channel" class="form-control" name="channel" [(ngModel)]="channelItem.channel" id="exampleInputEmail3" aria-describedby="emailHelp">
                                             </div>
                                             <div class="mb-3 col">
                                             <label for="exampleInputEmail1" class="form-label">Channel category</label>
-                                            <select class="form-select" name="category" [(ngModel)]="channelItem.category" aria-label="Default select example">
+                                            <span class="error" *ngIf="reactiveForm.get('category')?.touched && reactiveForm.get('category')?.invalid">
+                                                *Invalid
+                                            </span>
+                                            <select class="form-select" formControlName="category" name="category" [(ngModel)]="channelItem.category" aria-label="Default select example">
                                                 <option selected value="Education">Education</option>
                                                 <option value="Music">Music</option>
                                                 <option value="Film">Film</option>
@@ -44,35 +56,63 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <label for="exampleInputEmail1" class="form-label">Image</label><br>
+                                    <label for="exampleInputEmail1" class="form-label">Image</label>
+                                    <span class="error" *ngIf="reactiveForm.get('image')?.touched && reactiveForm.get('image')?.invalid">
+                                        *Invalid
+                                    </span>
+                                    <br>
                                     <div class="input-group mb-3">
-                                        <input type="file" class="form-control" (change)="selected($event)" name="image" [(ngModel)]="channelItem.image" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                                        <input type="file" formControlName="image" class="form-control" (change)="selected($event)" name="image" [(ngModel)]="channelItem.image" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleInputEmail1" class="form-label">Channel description</label>
-                                        <textarea type="textarea" class="form-control" name="description" minlength="120" maxlength="125" [(ngModel)]="channelItem.description" id="exampleInputEmail4" aria-describedby="emailHelp"></textarea>
+                                        <span class="error" *ngIf="reactiveForm.get('description')?.touched && reactiveForm.get('description')?.invalid">
+                                            *Invalid
+                                        </span>
+                                        <textarea type="textarea" formControlName="description" class="form-control" name="description" [(ngModel)]="channelItem.description" maxlength="125" id="exampleInputEmail4" aria-describedby="emailHelp"></textarea>
+                                        <div id="passhelp" class="form-text">
+                                            Must be 120-125 characters long
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <div class="mb-3 col">
                                             <label for="exampleInputEmail1" class="form-label">Country</label>
-                                            <input type="text" class="form-control" name="country" [(ngModel)]="channelItem.country" id="exampleInputEmail5" aria-describedby="emailHelp">
+                                            <span class="error" *ngIf="reactiveForm.get('country')?.touched && reactiveForm.get('country')?.invalid">
+                                                *Invalid
+                                            </span>
+                                            <input type="text" formControlName="country" class="form-control" name="country" [(ngModel)]="channelItem.country" id="exampleInputEmail5" aria-describedby="emailHelp">
                                             </div>
                                             <div class="mb-3 col">
                                             <label for="exampleInputEmail1" class="form-label">Phone no.</label>
-                                            <input type="text" class="form-control" name="phoneno" minlength="10" maxlength="10" [(ngModel)]="channelItem.phoneno" id="exampleInputEmail6" aria-describedby="emailHelp">
+                                            <span class="error" *ngIf="reactiveForm.get('phoneno')?.touched && reactiveForm.get('phoneno')?.invalid">
+                                                *Invalid
+                                            </span>
+                                            <input type="text" formControlName="phoneno" class="form-control" name="phoneno" [(ngModel)]="channelItem.phoneno" id="exampleInputEmail6" aria-describedby="emailHelp">
                                         </div>
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                        <input type="email" class="form-control"  name="email" [(ngModel)]="channelItem.email" id="exampleInputEmail7" aria-describedby="emailHelp">
+                                        <span class="error" *ngIf="reactiveForm.get('email')?.touched && reactiveForm.get('email')?.invalid">
+                                            *Invalid
+                                        </span>
+                                        <input type="email" formControlName="email" class="form-control"  name="email" [(ngModel)]="channelItem.email" id="exampleInputEmail7" aria-describedby="emailHelp">
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                                        <input type="password" class="form-control" name="password" [(ngModel)]="channelItem.password" id="exampleInputPassword1">
+                                        <span class="error" *ngIf="reactiveForm.get('password')?.touched && reactiveForm.get('password')?.invalid">
+                                            *Invalid
+                                        </span>
+                                        <input type="password" formControlName="password" class="form-control" name="password" [(ngModel)]="channelItem.password" id="exampleInputPassword1">
                                         <div id="passhelp" class="form-text">
                                             Must be 6-8 characters long , contain letters and numbers
                                         </div>
                                     </div>
+
+                                    <!-- <angular-file-uploader
+                                        [config]="afuConfig">
+                                    </angular-file-uploader> -->
+
+
                                     <button id="signup-btn" type="submit">Sign Up</button>
                                     <p id="signup1">Already have an account?
                                     <a routerLink="/" id="signup2" data-toggle="modal" data-target="#exampleModal">SignIn</a>
